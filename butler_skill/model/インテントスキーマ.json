@@ -1,0 +1,25 @@
+{
+  "intents": [
+    {
+      "intent": "ImHomeIntent"
+    },
+    {
+      "intent": "HungryIntent"
+    },
+    {
+      "intent": "MealIntent",
+      "slots": [
+        {
+          "name": "meal_name",
+          "type": "MEAL_NAME"
+        }
+      ]
+    },
+    {
+      "intent": "BathIntent"
+    },
+    {
+      "intent": "GoodbyeIntent"
+    }
+  ]
+}
