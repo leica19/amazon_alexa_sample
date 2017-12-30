@@ -1,0 +1,69 @@
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "shop_genre",
+          "type": "SHOP_GENRE_LIST"
+        }
+      ],
+      "intent": "ShopTypeIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "area",
+          "type": "AMAZON.City"
+        }
+      ],
+      "intent": "AreaIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "budget",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "BudgetIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "rank",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "RankIntent"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "number",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "ShopDetailIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "shop_genre",
+          "type": "SHOP_GENRE_LIST"
+        },
+        {
+          "name": "budget",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "area",
+          "type": "AMAZON.City"
+        }
+      ],
+      "intent": "MultiConditionIntent"
+    }
+  ]
+}

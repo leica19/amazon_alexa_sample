@@ -1,1 +1,0 @@
-# Alexa Skills Kit カスタムスキルサンプル

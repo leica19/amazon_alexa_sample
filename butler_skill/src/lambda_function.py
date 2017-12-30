@@ -14,7 +14,14 @@ def lambda_handler(event, context):
 
 def on_launch():
     print("on_launch")
-    return return_help()
+    data = {
+        "title": "ご主人様、こんにちわ。",
+        "speech": "こんにちわ、ご主人様。「ただいま」と話しかけてみて下さい。",
+        "reprompt": "「ただいま」と話しかけてみて下さい。",
+        "close_session": False,
+        "session_attribute": None
+    }
+    return build_speechlet_response(data)
 
 def on_intent(request, session):
     intent_name = request['intent']['name']
@@ -37,14 +44,14 @@ def on_intent(request, session):
     elif intent_name == "AMAZON.HelpIntent":
         return return_help()
     else:
-        return return_unknown()
+        return return_help()
 
 def return_help():
     data = {
-        "title": "ご主人様、こんにちわ。",
-        "speech": "こんにちわ、ご主人様。私はご主人様に使える執事です。「ただいま」と話しかけてみて下さい。",
-        "reprompt": "「ただいま」と話しかけてみて下さい。",
-        "close_session": False,
+        "title": "執事との接し方。",
+        "speech": "こんにちわ、ご主人様。私はご主人様に使える執事です。身の回りのお世話はおまかせ下さい。",
+        "reprompt": None,
+        "close_session": True,
         "session_attribute": None
     }
     return build_speechlet_response(data)

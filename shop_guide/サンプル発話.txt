@@ -1,0 +1,7 @@
+ShopTypeIntent {shop_genre} のお店
+AreaIntent {area} 周辺
+BudgetIntent {budget} 円ぐらい
+RankIntent 評価が {rank} 以上のお店
+AMAZON.NoIntent ない
+ShopDetailIntent {number} 件目
+MultiConditionIntent 予算 {budget} 円で {area} の {shop_genre} のお店を教えて
