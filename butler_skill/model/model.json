@@ -1,0 +1,99 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "執事",
+            "intents": [
+                {
+                    "name": "ImHomeIntent",
+                    "slots": [],
+                    "samples": [
+                        "ただいま",
+                        "帰ったよ",
+                        "帰りました",
+                        "ただいま帰りました"
+                    ]
+                },
+                {
+                    "name": "HungryIntent",
+                    "slots": [],
+                    "samples": [
+                        "ご飯にする",
+                        "飯にする",
+                        "食事にする",
+                        "お腹すいた",
+                        "腹減った",
+                        "ディナーにする"
+                    ]
+                },
+                {
+                    "name": "MealIntent",
+                    "slots": [
+                        {
+                            "name": "meal_name",
+                            "type": "MEAL_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "{meal_name} にする",
+                        "{meal_name} が食べたい"
+                    ]
+                },
+                {
+                    "name": "BathIntent",
+                    "slots": [],
+                    "samples": [
+                        "お風呂にする",
+                        "お風呂に入りたい",
+                        "体洗いたい",
+                        "さっぱりしたい"
+                    ]
+                },
+                {
+                    "name": "GoodbyeIntent",
+                    "slots": [],
+                    "samples": [
+                        "さようなら",
+                        "ごきげんよう"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "MEAL_NAME",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "ラーメン"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "チャーハン"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "焼肉"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "鍋"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "カレー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "うどん"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
