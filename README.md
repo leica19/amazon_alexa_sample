@@ -17,3 +17,4 @@ Amazon Alexaのサンプルソース
 
 Alexa Skills Kitの開発者コンソールがアップデートされたため、/butler_skill/modelの内容物が変更されています。
 スキルの対話モデルで、「JSONエディター」に `/butler_skill/model/model.json` の中身を貼り付けるだけで、インデント、スロット、サンプル発話の登録がされます。
+旧バージョンのmodelを参照する場合は、 [management_console_v1](https://github.com/sparkgene/amazon_alexa_sample/tree/management_console_v1) ブランチを見て下さい。
